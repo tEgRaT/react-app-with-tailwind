@@ -4,20 +4,20 @@ This project was bootstrapped with [How To Use Tailwind CSS With React](https://
 
 ## Step 1: Creating Your React Project
 
-```
+```bash
 $ npx create-react-app react-app-with-tailwind
 $ cd react-app-with-tailwind
 ```
 
 ## Step 2: Install Tailwind CSS
 
-```
+```bash
 $ npm install -D tailwindcss postcss autoprefixer
 ```
 
 ## Step 3: Generate Configuration Files
 
-```
+```bash
 $ npx tailwindcss init -p
 ```
 
@@ -25,7 +25,7 @@ $ npx tailwindcss init -p
 
 Inside tailwind.config.js we need to specify the path to our React template files by adding the following configuration setting:
 
-```
+```javascript
 module.exports = {
    content: [
      "./src/**/*.{js,jsx,ts,tsx}",
@@ -39,7 +39,7 @@ module.exports = {
 
 ## Step 5: Add Tailwind Directives
 
-```
+```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
